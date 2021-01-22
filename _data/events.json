@@ -1,0 +1,16 @@
+[
+  {
+    "title": "It Goes to Eleventy",
+    "speaker": "Mike Aparicio",
+    "summary": "Eleventy (11ty.dev) is a static site generator based on Node, and is used to create the Fizz website. Mike will do a live demo of Eleventy, building a site for The Sauce in real-time from scratch.",
+    "date": "Friday, January 22, 2021 &middot; 2pm Central",
+    "image": "eleventy-recipes.svg"
+  },
+  {
+    "title": "RSpec & Testing",
+    "speaker": "Tye Shavik",
+    "summary": "Tye will be teaching us the intricacies of rspec and testing.",
+    "date": "Friday, February 5, 2021 &middot; 2pm Central",
+    "image": "rspec.svg"
+  }
+]

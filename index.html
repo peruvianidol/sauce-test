@@ -1,0 +1,50 @@
+---
+layout: base
+title: The Sauce
+---
+
+<section>
+  <p class="fizz-text-large">The Sauce is Provi’s bi-weekly(ish) tech talk series, where Provi engineers can share their knowledge, learn from each other and chat about the latest industry trends.</p>
+</section>
+
+<main class="fizz-flow-16">
+
+  <h2 class="fizz-heading-2">Upcoming Schedule</h2>
+
+  {% for talk in events %}
+    <figure class="fizz-flex-row-responsive fizz-surface fizz-align-content-start fizz-inset-square-16">
+      <img src="images/{{ talk.image }}" alt="{{ talk.title }}" width="150" height="150">
+      <figcaption class="fizz-flex-item fizz-text-medium">
+        <h3 class="fizz-heading-4">{{ talk.title }}</h3>
+        <p class="fizz-stack-16">{{ talk.speaker }}</p>
+        <p class="fizz-text-large fizz-stack-16">{{ talk.summary }}</p>
+        <p><strong>{{ talk.date }}</strong></p>
+      </figcaption>
+    </figure>
+  {% endfor %}
+
+  <p class="fizz-text-center"><a href="">Previous Talks</a></p>
+
+  <h2 class="fizz-heading-2">Have a Talk Idea?</h2>
+
+  <form class="fizz-surface fizz-inset-square-16 fizz-flow-16" name="talk-submit" netlify>
+    <p class="fizz-heading-4"><label for="name">My Name is</label></p>
+    <input type="text" name="name" class="fizz-input-text" placeholder="First & Last Name" id="name">
+    <p class="fizz-heading-4">I want to</p>
+    <div>
+      <label for="hear">
+        <input type="radio" name="type" value="request" id="hear">
+        <span>Hear a Talk</span>
+      </label>
+      <label for="give">
+        <input type="radio" name="type" value="volunteer" id="give">
+        <span>Give a Talk</span>
+      </label>
+    </div>
+    <p class="fizz-heading-4"><label for="topic">About</label></p>
+    <input class="fizz-input-text" type="text" placeholder="Topic" id="topic">
+    <button type="submit" class="fizz-button-primary">Make it So</button>
+
+  </form>
+
+</main>

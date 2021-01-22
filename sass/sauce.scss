@@ -1,0 +1,11 @@
+@import '../node_modules/@peruvianidol/fizz/src/scss/fizz-unscoped.scss';
+
+body {
+  min-height: 0;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: minmax(min-content, 800px);
+  grid-template-rows: auto;
+  grid-gap: 2rem;
+  justify-content: center;
+}
