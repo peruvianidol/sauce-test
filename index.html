@@ -27,22 +27,22 @@ title: The Sauce
 
   <h2 class="fizz-heading-2">Have a Talk Idea?</h2>
 
-  <form class="fizz-surface fizz-inset-square-16 fizz-flow-16" name="talk-submit" netlify>
+  <form class="fizz-surface fizz-inset-square-16 fizz-flow-16" name="talk-submission" netlify>
     <p class="fizz-heading-4"><label for="name">My Name is</label></p>
     <input type="text" name="name" class="fizz-input-text" placeholder="First & Last Name" id="name">
-    <p class="fizz-heading-4">I want to</p>
+    <p class="fizz-heading-4"><label for="I want to">I want to</label></p>
     <div>
       <label for="hear">
-        <input type="radio" name="type" value="request" id="hear">
+        <input type="radio" name="I want to" value="hear a talk" id="hear">
         <span>Hear a Talk</span>
       </label>
       <label for="give">
-        <input type="radio" name="type" value="volunteer" id="give">
+        <input type="radio" name="I want to" value="give a talk" id="give">
         <span>Give a Talk</span>
       </label>
     </div>
-    <p class="fizz-heading-4"><label for="topic">About</label></p>
-    <input class="fizz-input-text" type="text" placeholder="Topic" id="topic">
+    <p class="fizz-heading-4"><label for="about">About</label></p>
+    <input class="fizz-input-text" type="text" name="about" placeholder="Topic" id="topic">
     <button type="submit" class="fizz-button-primary">Make it So</button>
 
   </form>
